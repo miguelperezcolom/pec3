@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+
+
+    <header>
+
+        <div>
+
+        <img src="img/logo.png" alt="Logo runis">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">INCIO</a></li>
+                <li><a href="tallas.html">TALLAS</a></li>
+                <li class="selected"><a href="inscripcion.html">INSCRIPCIÓN</a></li>
+            </ul>
+        </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <h1>Inscripción al club</h1>
+
+            <p>Rellena el siguiente formulario para inscribirte al club</p>
+
+
+            <form action="">
+
+                <fieldset>
+
+                    <legend>Datos personales</legend>
+
+                    <label class="requerido">Nombre</label>
+                    <input type="text" id="nombre" required>
+
+                    <label class="requerido" for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" required>
+
+
+                    <label class="requerido" for="calle">Calle y nº</label>
+                    <input type="text" id="calle" required>
+
+                    <label class="requerido" for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" required>
+
+                    <label class="requerido" for="provincia">Provincia</label>
+                    <input type="text" id="provincia" required>
+
+                    <label class="requerido" for="cp">Cód. postal</label>
+                    <input type="text" id="cp" required>
+
+                    <label class="requerido" for="pais">País</label>
+                    <input type="text" id="pais" required>
+
+
+
+                    <label class="requerido" for="email">Correo electrónico</label>
+                    <input type="email" id="email" required>
+
+                    <label class="requerido" for="dni">DNI</label>
+                    <input type="text" id="dni" required>
+
+                    <label class="requerido" for="fnac">Fecha de nacimiento</label>
+                    <input type="date" id="fnac" required>
+
+                    <label class="requerido" for="area">Área de estudios</label>
+                    <select id="area"  required>
+                        <option value="1">Artes y Humanidades</option>
+                        <option value="2">Ciencias de la salud</option>
+                        <option value="3">Comunicación e información</option>
+                        <option value="4">Derecho y ciencias políticas</option>
+                        <option value="5">Diseño, creación y multimedia</option>
+                        <option value="6">Economía y empresa</option>
+                        <option value="7">Informática, multimedia y telecomunicación</option>
+                        <option value="8">Psicología y ciencias de la educación</option>
+                        <option value="9">Turismo</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Datos de pago</legend>
+
+                    <label class="requerido">Forma de pago</label>
+                    <input type="radio" id="fps" name="formapago" value="s" required>
+                    <label for="fps" class="inline">Semestral</label>
+
+                    <input type="radio" id="fpa" name="formapago" value="a" required>
+                    <label for="fpa" class="inline">Anual</label>
+
+
+                    <label class="requerido">Método pago</label>
+                    <input type="radio" id="transf" name="metodopago" value="transf" required>
+                    <label for="transf" class="inline">Transferencia</label>
+
+                    <input type="radio" id="cred" name="metodopago" value="cred" required>
+                    <label for="cred" class="inline">Tarjeta de crédito</label>
+
+                    <input type="radio" id="paypal" name="metodopago" value="paypal" required>
+                    <label for="paypal" class="inline">Paypal</label>
+
+
+                    <label class="requerido" for="talla">Talla</label>
+                    <select id="talla" required>
+                        <optgroup label="Mujer">
+                            <option value="MS" label="S">S Mujer</option>
+                            <option value="MM" label="M">M Mujer</option>
+                            <option value="ML" label="L">L Mujer</option>
+                            <option value="MXL" label="XL">XL Mujer</option>
+                            <option value="MXXL" label="XXL">XXL Mujer</option>
+                        </optgroup>
+                        <optgroup label="Hombre">
+                            <option value="HS" label="S">S Hombre</option>
+                            <option value="HM" label="M">M Hombre</option>
+                            <option value="HL" label="L">L Hombre</option>
+                            <option value="HXL" label="XL">XL Hombre</option>
+                            <option value="HXXL" label="XXL">XXL Hombre</option>
+                        </optgroup>
+                    </select>
+
+
+                    <br/>
+
+                    <input type="checkbox" id="acepto" name="acepto" value="acepto" required>
+                    <label for="acepto" class="inline requerido">Acepto la política de privacidad</label>
+
+                    <input type="submit">
+                </fieldset>
+
+
+            </form>
+            <p>Los campos necesarios están marcados con <span style="color: red;">*</span></p>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+        <div class="contenedor">
+            <div class="autor">PEC3 Lenguajes y estándares web, 2018. <strong>Miguel Pérez Colom</strong></div>
+            <div class="creditos">Créditos: <a href="https://unsplash.com/@huckster">Tomasz Woźniak</a></div>
+        </div>
+    </footer>
+
+</body>
+</html>
