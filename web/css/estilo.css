@@ -109,11 +109,12 @@ main {
     margin: auto;
     padding-top: 63px;
     display: flex;
-    overflow: scroll;
 }
 
 main aside {
+    width: 330px;
     min-width: 330px;
+    margin-right: 31px;
 }
 
 main aside img {
@@ -122,7 +123,6 @@ main aside img {
 }
 
 article {
-    padding-left: 31px;
     font-size: 16px;
     line-height: 1.3em;
     width: 100%;
