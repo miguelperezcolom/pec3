@@ -204,17 +204,25 @@ article table {
     font-size: 14px;
 }
 
+
 article table thead {
     background-color: #00007b;
     color: white;
 }
 
-article table thead th {
+article table thead tr th {
     height: 40px;
     vertical-align: middle;
 }
 
-article table td {
+article table tr td, article table tr th {
+    border: 1px solid black;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4px;
+}
+
+article table tr td {
     border: 1px solid black;
     vertical-align: middle;
     background-color: white;
@@ -222,7 +230,7 @@ article table td {
     padding: 4px;
 }
 
-article table td[scope="col"], article table td[scope="row"] {
+article table th[scope="col"], article table th[scope="row"] {
     background-color: #dedede;
     font-weight: bold;
 }
