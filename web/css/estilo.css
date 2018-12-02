@@ -50,10 +50,21 @@ table {
 
 
 
+/*
+aquí comenzamos
+ */
+
+
 body {
     background-color: #e5dcc8;
     font-family: Arial;
+    height: 100%;
 }
+
+/*
+cabecera común
+ */
+
 
 header {
     border-bottom: 5px solid #00007b;
@@ -70,6 +81,11 @@ header div {
 header img {
     height: 84px;
 }
+
+/*
+menú
+ */
+
 
 header nav {
     display: inline-block;
@@ -102,25 +118,26 @@ header nav ul li a {
 }
 
 
+/*
+cuerpo
+ */
+
+.contenedor {
+    width: 100%;
+    position:absolute;
+    height: calc(100% - 170px);
+    overflow: auto;
+}
 
 
 main {
-    max-width: 930px;
     margin: auto;
     padding-top: 63px;
     display: flex;
-}
-
-main aside {
-    width: 330px;
-    min-width: 330px;
-    margin-right: 31px;
-}
-
-main aside img {
     width: 100%;
-    margin-bottom: 12px;
+    max-width: 930px;
 }
+
 
 article {
     font-size: 16px;
@@ -144,6 +161,23 @@ article h2 {
     margin-top: 32px;
 }
 
+
+/*
+página inicio
+ */
+
+main aside {
+    width: 330px;
+    min-width: 330px;
+    margin-right: 31px;
+}
+
+main aside img {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+
 article ul {
     list-style: disc;
     padding-left: 20px;
@@ -156,6 +190,11 @@ em {
 strong {
     font-weight: bold;
 }
+
+
+/*
+página tallas
+ */
 
 article table {
     margin-top: 50px;
@@ -206,7 +245,9 @@ article table td.inch {
     padding-right: 5px;
 }
 
-
+/*
+página inscripción
+ */
 
 form {
     padding-top: 50px;
@@ -265,11 +306,11 @@ label.requerido::after {
 }
 
 
+
+
 /*
-input[required] ~ label::after, select[required] ~ label::after {
-    content: '*';
-}
-*/
+pié de página común
+ */
 
 footer {
     height: 77px;
