@@ -109,6 +109,7 @@ main {
     margin: auto;
     padding-top: 63px;
     display: flex;
+    overflow: scroll;
 }
 
 main aside {
